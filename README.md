@@ -1,4 +1,4 @@
-# Portfolio Project Website
+# Client Website- Promoting Piano and Flute Teaching Business
 
 This is a website for my client advertising her piano and flute lesson business. 
 
