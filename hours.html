@@ -8,53 +8,18 @@
     <link rel="stylesheet" href="./public/styles/pages.css">
   </head>
 
-  <style>
-    /* Table Styling */
-    table {
-        width: 85%;
-        margin: 20px auto;
-        border-collapse: collapse;
-        border-radius: 10px;
-        overflow: hidden;
-        color: black;
-    }
-
-    th, td {
-        padding: 15px;
-        text-align: left;
-    }
-
-    /* Header Styling */
-    th {
-        background-color:#F7CFD8;
-        font-weight: bold;
-    }
-
-    /* Row Styling */
-    tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    tr:hover {
-        background-color: #ddd;
-    }
-
-    /* Border Styling */
-    td, th {
-        border: 1px solid #ddd;
-    }
-    </style>
-
 <body>
     
 
   <!-- HEADER -->
   <div class="container-header">
+
    <header class="d-flex justify-content-center py-3">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
       <span class="fs-4">Jeri Urban Studio</span>
     </a>
+
     <ul class="nav nav-pills">
       <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">Home</a></li>
       <li class="nav-item"><a href="./Services.html" class="nav-link">Services</a></li>
@@ -63,21 +28,22 @@
       <li class="nav-item"><a href="./hours.html" class="nav-link active" aria-current="page">Hours</a></li>
     </ul>
    </header>
+
   </div>
 
-  <!-- BACKGROUND -->
-  <div class="background">
   <!-- TILE CONTENT -->
   <div class="tile">
      <div class="content auto-height">
+     
       <h1>Schedule</h1>
-      <hr style="color: black; width: 60%; margin: auto;">
 
+      <hr style="color: black; width: 60%; margin: auto;">
    
       <p>Each session is a half-hour in length, once a week.</p>
 
       <title>Stylish Table</title>
 
+        <div class="table-wrapper">
                 <table>
                   <thead>
                       <tr>
@@ -100,8 +66,7 @@
 
                   </tbody>
               </table>
-
-            
+            </div>
 
       <p>This is my standard schedule. However, if these days or times don't work for you but you are still interested, please reach out 
         to me and we'll see if we can make a different time work! 

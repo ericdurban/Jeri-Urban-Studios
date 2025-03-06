@@ -1,7 +1,13 @@
-/* IMPORTS */
+/* ===============
+    IMPORTS
+=================*/
 @import url("https://fonts.google.com/specimen/Red+Hat+Display");
 
-/* MAIN CSS and background */
+/* ===============
+    MAIN BODY
+=================*/
+
+/* Background */
 html, body{
     margin: 0;
     width: 100%;
@@ -10,7 +16,10 @@ html, body{
     background-color: #F4F8D3;
 }
 
-/* Header Navigation Links */
+/* Header and Navigation Links */
+.container-header {
+  background-color: white;}
+
 .nav-link {
   color: #73C7C7;
   font-weight: bold;
@@ -31,11 +40,12 @@ html, body{
   color: black;
 }
 
-/* The Context Containers */
-.container-header {
-    background-color: white;}
+/* ===============
+   CONTAINER BOX
+=================*/
 
-   .tile {
+/* Background */
+.tile {
     bottom: .5em;
     text-align: center;
     background-color: white;
@@ -52,7 +62,7 @@ html, body{
     background-color: white;
 }
    
-  .content {
+.content {
     margin: auto;
     height: 70%; 
     display: flex;
@@ -61,14 +71,17 @@ html, body{
     padding: 0px 50px 0px 50px;
   }
 
-  h1{
+/* ===============
+CONTAINER CONTENT
+=================*/
+h1{
     color: #73C7C7;
     font-style: oblique;
     padding: 30px;
     margin: 0px;
   }
 
-  h2 {
+h2 {
     color: black;
     padding: 10px;
     margin: 0px;
@@ -83,6 +96,19 @@ html, body{
     margin: 0px;
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+    /* Spans for defining paragraphs */
+    .context {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+   /* Spans for defining text */
+  .important {
+    color: #73C7C7;
+    font-weight: bold;
+    text-decoration: none;
   }
 
   #button {
@@ -102,17 +128,10 @@ html, body{
     }
   }
 
-  .context {
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-  .important {
-    color: #73C7C7;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
+ /* ===============
+ TABLES OR CARDS
+ WITHIN CONTAINERS
+=================*/
   .card-header {
     background-color:#F7CFD8;
     font-weight: bold;
@@ -123,21 +142,65 @@ html, body{
     font-size: larger;
   } 
 
-  
-/* SCREEN SIZE ADJUSTMENTS */
-  @media only screen and (max-width: 600px) {
-
-    .tile{
-      margin: 6%;
-    }
-
-    .plan_cluster{
-      padding-left: 10%;
-    }
-
-    #description{
-      padding-left: 6%;
-      padding-right: 6%;
-    }
-
+  table {
+      width: 85%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      color: black;
   }
+
+  th, td {
+      padding: 15px;
+      text-align: left;
+  }
+
+  /* Specific Table in Hours Tab */
+  th {
+      background-color:#F7CFD8;
+      font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+      background-color: #f2f2f2;
+  }
+
+  tr:hover {
+      background-color: #ddd;
+  }
+
+  td, th {
+      border: 1px solid #ddd;
+  }
+  
+ /* ===============
+    SCREEN SIZE
+    ADJUSTMENTS
+=================*/
+
+/* For scaling small screens */
+@media (max-width: 767px) {
+  .tile {
+    width: 550px;
+  }
+
+  .content {
+    padding: 20px; 
+  }
+
+  .table-wrapper {
+    font-size: small;
+  }
+}
+
+/* For scaling smaller screens (mobile) */
+@media (max-width: 600px) {
+  .tile {
+    width: 450px;
+  }
+
+table th:nth-child(3), table td:nth-child(3) { /* Hides the "Current Openings" column on the table in the Hours Tab */
+  display: none; 
+}
+}
