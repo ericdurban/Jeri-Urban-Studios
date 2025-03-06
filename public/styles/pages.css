@@ -194,7 +194,7 @@ h2 {
   }
 }
 
-/* For scaling smaller screens (mobile) */
+/* For scaling smaller screens */
 @media (max-width: 600px) {
   .tile {
     width: 450px;
@@ -203,4 +203,27 @@ h2 {
 table th:nth-child(3), table td:nth-child(3) { /* Hides the "Current Openings" column on the table in the Hours Tab */
   display: none; 
 }
+}
+
+/* For scaling smallest screens (mobile) */
+@media (max-width: 500px) {
+  .tile {
+    width: 350px;
+  }
+
+table th:nth-child(3), table td:nth-child(3) { /* Hides the "Current Openings" column on the table in the Hours Tab */
+  display: none; 
+}
+
+.row.row-cols-2 {
+  display: inline-block;
+}
+
+.col {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 }
