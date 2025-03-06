@@ -11,32 +11,65 @@ body {
     -moz-osx-font-smoothing: grayscale
 }
 
-a {
-    color:  #F4F8D3;
-}
-
-.cover-button {
-    hover: {
-    background-color: #F7CFD8;
-    color: black;
-    border-color: #F4F8D3;}
-}
-
 /* Header Section */
 .container-header {
     color: #73C7C7;
     background-color: white;
 }
 
-.profile-picture {
-    border-radius: 5%;
+/* Header Navigation Links */
+.nav-link {
+    color: #73C7C7;
+    font-weight: bold;
 }
 
-/*  Cover Section */
+.nav-link:hover {
+    color: black;
+}
+
+.nav-item .nav-link.active {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #73C7C7;
+}
+
+.nav-link:focus {
+    background-color: white;
+    color: black;
+}
+
+/*  Hero Banner */
 .container-cover {
     background-color: #73C7C7;
     padding-top: 0;
     margin-top: 0;
+}
+
+/* Hero Banner Title "made fun!" */
+.madeFun {
+    color: #F4F8D3;
+    text-decoration: underline;
+}
+
+/* Hero Banner Button */
+.cover-button {
+background-color: #F7CFD8;
+border-color: #F7CFD8;
+font-weight: bold;
+}
+
+.cover-button:hover {
+    background-color: #A6F1E0;
+    border-color:  #A6F1E0;
+}
+
+.cover-button:focus {
+    background-color: #A6F1E0;
+    color: white;
+}
+
+.profile-picture {
+    border-radius: 5%;
 }
 
 /*  Button Icons */
@@ -44,29 +77,14 @@ a {
     width: 4rem;
     height: 4rem;
     border-radius: .75rem;
-  }
-  
-  .icon-square {
-    width: 3rem;
-    height: 3rem;
-    border-radius: .75rem;
+    background-color: #F7CFD8;
   }
   
   .text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
   .text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
   .text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
-  
-  .card-cover {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-  
-  .feature-icon-small {
-    width: 3rem;
-    height: 3rem;
-  }
-  
+
+    
 /*  About Section */
 .about {
     background-color:#F7CFD8;

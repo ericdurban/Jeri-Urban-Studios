@@ -11,7 +11,7 @@
   <style>
     /* Table Styling */
     table {
-        width: 80%;
+        width: 85%;
         margin: 20px auto;
         border-collapse: collapse;
         border-radius: 10px;
@@ -27,7 +27,6 @@
     /* Header Styling */
     th {
         background-color:#F7CFD8;
-        color: black;
         font-weight: bold;
     }
 
@@ -57,11 +56,11 @@
       <span class="fs-4">Jeri Urban Studio</span>
     </a>
     <ul class="nav nav-pills">
-      <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">Home</a></li>
       <li class="nav-item"><a href="./Services.html" class="nav-link">Services</a></li>
       <li class="nav-item"><a href="./pricing.html" class="nav-link">Pricing</a></li>
       <li class="nav-item"><a href="./faqs.html" class="nav-link">FAQs</a></li>
-      <li class="nav-item"><a href="./hours.html" class="nav-link">Hours</a></li>
+      <li class="nav-item"><a href="./hours.html" class="nav-link active" aria-current="page">Hours</a></li>
     </ul>
    </header>
   </div>
@@ -71,7 +70,11 @@
   <!-- TILE CONTENT -->
   <div class="tile">
      <div class="content auto-height">
-      <h1>Hours</h1>
+      <h1>Schedule</h1>
+      <hr style="color: black; width: 60%; margin: auto;">
+
+   
+      <p>Each session is a half-hour in length, once a week.</p>
 
       <title>Stylish Table</title>
 
@@ -80,26 +83,31 @@
                       <tr>
                           <th>Days</th>
                           <th>Times</th>
+                          <th>Current Openings</th>
                       </tr>
                   </thead>
                   <tbody>
                       <tr>
                           <td>Wednesdays</td>
-                          <td>3:30-6:00 PM</td>
-
+                          <td>3:00-6:00 PM</td>
+                          <td>3:00-3:30, 5:30-6:00</td>
                       </tr>
                       <tr>
                           <td>Saturdays</td>
                           <td>8:00-11:00 AM</td>
+                          <td>8:00-8:30, 8:30-9:00, 9:30-10:00, 10:30-11:00</td>
                       </tr>
 
                   </tbody>
               </table>
-      <p>This is my standard Schedule. However, if these days or times don't work for you but you are still interested in lessons, please reach out 
+
+            
+
+      <p>This is my standard schedule. However, if these days or times don't work for you but you are still interested, please reach out 
         to me and we'll see if we can make a different time work! 
       </p>
       
-      <button id="button">Book Your First Session!</button>
+      <button id="button" onclick="window.location.href='mailto:jerianne9416@gmail.com';">Book Your First Session!</button>
     </div>
   </div>
 

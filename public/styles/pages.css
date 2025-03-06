@@ -1,7 +1,7 @@
 /* IMPORTS */
 @import url("https://fonts.google.com/specimen/Red+Hat+Display");
 
-/* MAIN CSS */
+/* MAIN CSS and background */
 html, body{
     margin: 0;
     width: 100%;
@@ -10,10 +10,32 @@ html, body{
     background-color: #F4F8D3;
 }
 
+/* Header Navigation Links */
+.nav-link {
+  color: #73C7C7;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.nav-item .nav-link.active {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #73C7C7;
+}
+
+.nav-link:focus {
+  background-color: white;
+  color: black;
+}
+
+/* The Context Containers */
 .container-header {
     background-color: white;}
 
-   .tile{
+   .tile {
     bottom: .5em;
     text-align: center;
     background-color: white;
@@ -21,12 +43,12 @@ html, body{
     // margin-left: auto;
     // margin-right: auto;
     top: 50%;
-    width: 700px;
+    width: 800px;
     border-radius: 15px;
     margin-top: 20px;
     padding-bottom: 30px;
     color: white;
-    box-shadow: 0 10px 20px -6px #73C7C7;
+    box-shadow: 0 10px 20px -6px #F7CFD8;
     background-color: white;
 }
    
@@ -42,7 +64,7 @@ html, body{
   h1{
     color: #73C7C7;
     font-style: oblique;
-    padding: 0px;
+    padding: 30px;
     margin: 0px;
   }
 
@@ -73,13 +95,34 @@ html, body{
     box-shadow: 0 10px 20px -6px #73C7C7;
     background-color: #73C7C7;
     &:hover{
-      background-color: black;
+      background-color: #F7CFD8;
       transition: .3s;
-      box-shadow: 0 10px 20px -6px $Desaturatedblue;
+      box-shadow: 0 10px 20px -6px #F7CFD8;
       cursor: pointer;
     }
   }
- 
+
+  .context {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .important {
+    color: #73C7C7;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .card-header {
+    background-color:#F7CFD8;
+    font-weight: bold;
+    color: black;
+  }
+
+  .card-body p {
+    font-size: larger;
+  } 
+
   
 /* SCREEN SIZE ADJUSTMENTS */
   @media only screen and (max-width: 600px) {
