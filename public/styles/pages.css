@@ -208,16 +208,9 @@ table th:nth-child(3), table td:nth-child(3) { /* Hides the "Current Openings" c
 /* For scaling smallest screens (mobile) */
 @media (max-width: 500px) {
   .tile {
-    width: 100%;
+    width: 400px;
   }
 
-  /* Hides the "Times" column (2nd column) on mobile */
-  .times-column {
-    display: none !important;
-  }
-.row.row-cols-2 {
-  display: inline-block;
-}
 
   table th:nth-child(3), 
   table td:nth-child(3) {
@@ -229,6 +222,25 @@ table th:nth-child(3), table td:nth-child(3) { /* Hides the "Current Openings" c
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+#table-div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* centering the pink tables */
+.tile .content {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+}
+
+.row {
+  display: flex;
+  justify-content: center; 
+  width: 100%; 
 }
 
 }
