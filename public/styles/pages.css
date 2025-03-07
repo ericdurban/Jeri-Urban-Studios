@@ -208,19 +208,24 @@ table th:nth-child(3), table td:nth-child(3) { /* Hides the "Current Openings" c
 /* For scaling smallest screens (mobile) */
 @media (max-width: 500px) {
   .tile {
-    width: 350px;
+    width: 100%;
   }
 
-table th:nth-child(3), table td:nth-child(3) { /* Hides the "Current Openings" column on the table in the Hours Tab */
-  display: none; 
-}
-
+  /* Hides the "Times" column (2nd column) on mobile */
+  .times-column {
+    display: none !important;
+  }
 .row.row-cols-2 {
   display: inline-block;
 }
 
+  table th:nth-child(3), 
+  table td:nth-child(3) {
+    display: none; 
+  }
+
 .col {
-  width: 100%;
+  width: 300px;
   justify-content: center;
   align-items: center;
   text-align: center;
