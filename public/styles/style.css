@@ -101,7 +101,7 @@ font-weight: bold;
 .about {
     background-color:#F7CFD8;
     display: flex;
-    align-items: center;  /* Vertically align the child elements in the middle */
+    align-items: center;  /* Vertically aligns the child elements in the middle */
 }
 
 /* Spans defining text */
@@ -110,7 +110,7 @@ font-weight: bold;
     font-weight: bold;
 }
 
-/* paragraph */
+/* Paragraph */
 .lead {
     text-align: justify;
 }
