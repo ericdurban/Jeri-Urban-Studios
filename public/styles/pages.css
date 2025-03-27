@@ -182,7 +182,7 @@ h2 {
 /* For scaling small screens */
 @media (max-width: 767px) {
   .tile {
-    width: 550px;
+    width: 520px;
   }
 
   .content {
@@ -197,7 +197,7 @@ h2 {
 /* For scaling smaller screens */
 @media (max-width: 600px) {
   .tile {
-    width: 450px;
+    width: 430px;
   }
 
 table th:nth-child(3), table td:nth-child(3) { /* Hides the "Current Openings" column on the table in the Hours Tab */
@@ -218,7 +218,7 @@ table th:nth-child(3), table td:nth-child(3) { /* Hides the "Current Openings" c
   }
 
 .col {
-  width: 300px;
+  width: 280px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -240,7 +240,7 @@ table th:nth-child(3), table td:nth-child(3) { /* Hides the "Current Openings" c
 .row {
   display: flex;
   justify-content: center; 
-  width: 100%; 
+  width: 90%; 
 }
 
 }
