@@ -140,7 +140,11 @@ font-weight: bold;
 
 /* For scaling small screens */
 @media (max-width: 767px) {
-    
+  
+  .fs-4 {
+    font-size: 1rem !important;
+   }
+
    /* Centering the Hero Banner section */
    .container-cover {
     flex-direction: column; 

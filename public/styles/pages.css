@@ -181,6 +181,10 @@ h2 {
 
 /* For scaling small screens */
 @media (max-width: 767px) {
+  .fs-4 {
+    font-size: 1rem !important;
+   }
+ 
   .tile {
     width: 520px;
   }
@@ -207,6 +211,7 @@ table th:nth-child(3), table td:nth-child(3) { /* Hides the "Current Openings" c
 
 /* For scaling smallest screens (mobile) */
 @media (max-width: 500px) {
+ 
   .tile {
     width: 400px;
   }
